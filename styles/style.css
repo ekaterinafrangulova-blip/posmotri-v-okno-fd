@@ -9,7 +9,7 @@ html {
 }
 
 .page {
-  height: 800px;
+ /* height: 800px;*/
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -19,8 +19,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
-  ;
-
+  
 }
 
 .content {
@@ -28,7 +27,7 @@ html {
   height: 534px;
   display: flex;
   gap: 30px;
-  margin: 128px 37px 138px 23px;
+  margin: auto 30px;
 }
 
 .result {
@@ -209,6 +208,7 @@ ol {
   gap: 2.5px;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
 }
 
 /* Кастомный скроллбар */
@@ -250,9 +250,6 @@ ol {
   width: 225px;
 }
 
-.search-form__label {
-  cursor: pointer
-}
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
@@ -347,7 +344,3 @@ ol {
   position: relative;
 }
 
-.preloader {
-  position: absolute;
-
-}
