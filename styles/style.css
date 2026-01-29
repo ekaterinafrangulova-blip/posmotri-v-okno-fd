@@ -18,12 +18,18 @@ fieldset {
   padding: 0;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+
 html {
   block-size: 100%;
 }
 
 .page {
- /* height: 800px;*/
+
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -33,7 +39,7 @@ html {
   background-color: #1b1919;
   display: flex;
   justify-content: center;
-  
+
 }
 
 .content {
@@ -56,15 +62,17 @@ html {
   display: flex;
   gap: 40px;
   min-height: 54px;
+  align-items: flex-end;
 
 }
+
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;
 }
 
 .content__list-container {
-  height: 534px;
+  height: 298px;
   overflow-y: auto;
 }
 
@@ -72,15 +80,11 @@ html {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 534px;
+  min-height: 534px;
   gap: 26px;
 }
 
 
-ul,
-ol {
-  list-style: none;
-}
 
 .result__video-container {
   width: 711px;
@@ -125,6 +129,7 @@ ol {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+
 }
 
 .title {
@@ -173,6 +178,7 @@ ol {
 
 
 .content__video-card-title {
+  width: 194px;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -183,7 +189,9 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
 }
+
 
 .content__video-card-description {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -203,17 +211,20 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 16px;
-
+  padding: 0 0 5px 0;
 }
 
 .search-form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px
 }
 
 .search-form__label {
   display: flex;
   gap: 2.5px;
-  align-items: center;
+  align-items: flex-end;
   width: fit-content;
   cursor: pointer;
 }
@@ -242,6 +253,7 @@ ol {
 }
 
 .search-form__textfield {
+  margin-top: auto;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -321,6 +333,7 @@ ol {
   align-self: flex-end;
   width: 194px;
   min-height: 34px;
+  margin-left: auto;
 }
 
 .more-button {
@@ -350,4 +363,3 @@ ol {
 .content__list-container {
   position: relative;
 }
-
